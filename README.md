@@ -34,11 +34,12 @@ This project is **Simple Chat Project** made with **[Laravel](https://laravel.co
 3. Copy **.env.example** to **.env**
 4. Change your credential in **.env** like database etc
 5. Open your terminal to your project
-6. Run ```php artisan migrate:fresh --seed```
-7. Run ```php artisan serve```
-8. Run ```npm install```
-8. Run ```npm run build```
-9. DONE open your browser and access your **localhost:8000**
+6. Run ```php artisan key:generate```
+7. Run ```php artisan migrate:fresh --seed```
+8. Run ```php artisan serve```
+9. Run ```npm install```
+10. Run ```npm run build```
+11. DONE open your browser and access your **localhost:8000**
 
 ## How To Install (Docker)
 
@@ -50,10 +51,11 @@ This project is **Simple Chat Project** made with **[Laravel](https://laravel.co
 6. Run ```docker compose up -d```
 7. Run ```chmod +x sail```
 8. Run ```./sail shell```
-9. Run ```php artisan migrate:fresh --seed```
-10. Run ```npm install```
-11. Run ```npm run build```
-12. DONE open your browser and access your **[http://localhost](http://localhost)**
+9. Run ```php artisan key:generate```
+10. Run ```php artisan migrate:fresh --seed```
+11. Run ```npm install```
+12. Run ```npm run build```
+13. DONE open your browser and access your **[http://localhost](http://localhost)**
 
 ## Note (For Docker Installation)
 
