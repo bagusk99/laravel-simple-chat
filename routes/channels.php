@@ -20,3 +20,9 @@ Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
 Broadcast::channel('broadcast-chat', function($user) {
     return true;
 });
+
+Broadcast::channel('online', function($user) {
+    if (auth()->check()) {
+        return $user->toArray();
+    }
+});
