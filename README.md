@@ -21,46 +21,43 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## About This Project
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This project made with **[Laravel](https://laravel.com)** and **[Soketi](Soketi)** without **Vue** or other Front End Framework. 
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<img src="readme/Chat.png">
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## How To Install
 
-## Laravel Sponsors
+1. Clone this project
+2. Open this project with your IDE
+3. Copy **.env.example** to **.env**
+4. Change your credential in **.env** like database etc
+5. Open your terminal to your project
+6. Run ```php artisan migrate:fresh --seed```
+7. Run ```php artisan serve```
+8. DONE open your browser and access your **localhost:8000**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## How To Install (Docker)
 
-### Premium Partners
+1. Make sure you already install **[Docker](https://docs.docker.com/)**
+2. Clone this project
+3. Open this project with your IDE
+4. Copy **.env.example** to **.env**
+5. Open your terminal to your project
+6. Run ```docker compose up -d```
+7. Run ```chmod +x sail```
+8. Run ```./sail shell```
+9. Run ```php artisan migrate:fresh --seed```
+10. DONE open your browser and access your **[http://localhost](http://localhost)**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Note (For Docker Installation)
 
-## Contributing
+if your port 80 already in use, add **APP_PORT** in **.env** file after **APP_URL**.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+*example* :<br/>
+APP_ENV=local<br/>
+APP_KEY=base64:ehCWhHF4SkSKa2ObonQAVOQcJjhlbI+XXXXXXXXX+XX=<br/>
+APP_DEBUG=true<br/>
+APP_URL=http://localhost<br/>
+APP_PORT=8001<br/>
