@@ -112,18 +112,18 @@
                 form.reset();
             });
         
-            Echo.join('online')
-                .here((users) => {
-                    renderOnline(users, 'online');
-                })
-                .joining((user) => {
-                    renderOnline([user], 'online');
-                })
-                .leaving((user) => {
-                    renderOnline([user], 'offline');
-                })
-                .error((error) => {
-                    console.error(error);
-                });
+        Echo.join('online')
+            .here((users) => {
+                renderOnline(users, 'online');
+            })
+            .joining((user) => {
+                renderOnline([user], 'online');
+            })
+            .leaving((user) => {
+                renderOnline([user], 'offline');
+            })
+            .error((error) => {
+                console.error(error);
+            });
     })
 </script>
