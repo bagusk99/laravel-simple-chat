@@ -23,7 +23,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## About This Project
 
-This project made with **[Laravel](https://laravel.com)** and **[Soketi](Soketi)** without **Vue** or other Front End Framework. 
+This project is **Simple Chat Project** made with **[Laravel](https://laravel.com)** and **[Soketi](Soketi)** without **Vue** or other Front End Framework. 
 
 <img src="readme/Chat.png">
 
@@ -61,3 +61,11 @@ APP_KEY=base64:ehCWhHF4SkSKa2ObonQAVOQcJjhlbI+XXXXXXXXX+XX=<br/>
 APP_DEBUG=true<br/>
 APP_URL=http://localhost<br/>
 APP_PORT=8001<br/>
+
+## Login
+
+    email = user1@email.com
+    password = password
+
+    email = user2@email.com
+    password = password
